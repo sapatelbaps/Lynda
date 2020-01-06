@@ -8,9 +8,13 @@ var style = {
 }
 
 const title= React.createElement(
-    'h1',
+    'ul',
     {id: 'title', className:'header'},
-    'Hello World'
+    React.createElement(
+        'li',
+        {},
+        'item on our list'
+    )
 )
 
 ReactDOM.render(

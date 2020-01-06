@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { Component } from "react";
+import { render } from "react-dom";
 
 let skiData = {
   total: 50,
@@ -10,27 +10,28 @@ let skiData = {
 
 class SkiDayCounter extends React.Component {
   render() {
+      const {total, powder, backcountry, goal} = this.props
     return (
       <section>
         <h3>Ski Days</h3>
         <div>
-          <p>Total Days : {this.props.total}</p>
+          <p>Total Days : {total}</p>
         </div>
         <div>
-          <p>Powder Days : {this.props.powder}</p>
+          <p>Powder Days : {powder}</p>
         </div>
         <div>
-          <p>Backcountry Days : {this.props.backcountry}</p>
+          <p>Backcountry Days : {backcountry}</p>
         </div>
         <div>
-          <p>Goal : {this.props.goal}</p>
+          <p>Goal : {goal}</p>
         </div>
       </section>
     );
   }
 }
 
-ReactDOM.render(
+render(
   <SkiDayCounter
     total={skiData.total}
     powder={skiData.powder}

@@ -5,7 +5,7 @@ using System;
 namespace SalaryCalcTestProj
 {
     [TestClass]
-    public class UnitTest1
+    public class CalculatorTest
     {
         [TestMethod]
         public void AnnualSalaryTest()

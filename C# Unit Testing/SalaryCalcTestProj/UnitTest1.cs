@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Calculator;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
 namespace SalaryCalcTestProj
@@ -13,7 +14,7 @@ namespace SalaryCalcTestProj
             SalaryCalculator sc = new SalaryCalculator();
 
             // Act
-            decimal annualSalary = sc.GetAnnualSalary();
+            decimal annualSalary = sc.GetAnnualSalary(65);
 
             // Assert
             Assert.AreEqual(120000, annualSalary);

@@ -8,17 +8,11 @@ namespace Calculator
 {
     public class SalaryCalculator
     {
-        public decimal GetAnnualSalary(decimal hourlyWage)
-        {
-            const int HoursInYear = 40 * 50;
-            decimal annualSalray = hourlyWage * HoursInYear;
-            return annualSalray;
-        }
+        const int HoursInYear = 40 * 50;
 
-        public decimal GetHourlyWage(int annualSalary)
-        {
-            const int HoursInYear = 40 * 50;
-            return annualSalary / HoursInYear;
-        }
+        public decimal GetAnnualSalary(decimal hourlyWage) =>  hourlyWage * HoursInYear;
+
+        public decimal GetHourlyWage(int annualSalary) => (annualSalary / HoursInYear);
+
     }
 }

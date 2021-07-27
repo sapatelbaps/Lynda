@@ -14,5 +14,12 @@ namespace Calculator
             decimal annualSalray = hourlyWage * HoursInYear;
             return annualSalray;
         }
+
+        public decimal GetHourlyWage(int annualSalary)
+        {
+            const int HoursInYear = 40 * 50;
+            //return annualSalary / HoursInYear;
+            return 0;
+        }
     }
 }

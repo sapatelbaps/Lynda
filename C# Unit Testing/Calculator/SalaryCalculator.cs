@@ -10,8 +10,9 @@ namespace Calculator
     {
         public decimal GetAnnualSalary(decimal hourlyWage)
         {
-            const int HoursInYear = 40 * 52;
-            return 0;
+            const int HoursInYear = 40 * 50;
+            decimal annualSalray = hourlyWage * HoursInYear;
+            return annualSalray;
         }
     }
 }
